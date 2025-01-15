@@ -92,7 +92,7 @@ const Home = () => {
 
       {/* Servie Sections */}
       <div className="bg-primaryBackground mb-12 p-4">
-        <div className="p-5 md:p-10 flex items-center justify-center container mx-auto">
+        <div className="p-5 md:p-10 flex flex-col items-center justify-center container mx-auto">
           <h6 className="text-secondary font-serif flex items-center justify-center text-2xl">
             <span className="mr-2">
               <FaArrowRightLong />
