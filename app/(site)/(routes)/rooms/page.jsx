@@ -8,7 +8,7 @@ import { FaLock } from "react-icons/fa6";
 import { TiTick } from "react-icons/ti";
 import { FaPeopleRoof } from "react-icons/fa6";
 
-const rooms = [
+export const rooms = [
   {
     name: "Standard Room | Single",
     bed: "1 King Bed",
