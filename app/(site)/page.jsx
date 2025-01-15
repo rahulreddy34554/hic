@@ -4,6 +4,7 @@ import { HomeAbout } from "./_components/home-about";
 import { FaArrowRightLong, FaArrowLeftLong } from "react-icons/fa6";
 import { HomeService } from "./_components/home-service";
 import { Testimonial } from "./_components/testimonial";
+import { HomeRooms } from "./_components/home-room";
 
 // Apartment Facilities Array
 export const apartmentFacilites = [
@@ -30,40 +31,6 @@ export const apartmentFacilites = [
 ];
 
 // Room Data Array
-const rooms = [
-  {
-    id: 1,
-    image: "/4.webp",
-    price: 350,
-    adults: 4,
-    children: 2,
-    roomSpace: 45,
-  },
-  {
-    id: 2,
-    image: "/4.webp",
-    price: 350,
-    adults: 4,
-    children: 2,
-    roomSpace: 45,
-  },
-  {
-    id: 3,
-    image: "/4.webp",
-    price: 350,
-    adults: 4,
-    children: 2,
-    roomSpace: 45,
-  },
-  {
-    id: 4,
-    image: "/4.webp",
-    price: 350,
-    adults: 4,
-    children: 2,
-    roomSpace: 45,
-  },
-];
 
 const Home = () => {
   return (
@@ -118,33 +85,7 @@ const Home = () => {
         </div>
 
         {/* Room Cards Scrollable Container */}
-        <div className="relative overflow-hidden mt-10">
-          <div className="flex gap-5 overflow-x-auto scroll-smooth snap-x snap-mandatory">
-            {rooms.map((room) => (
-              <div
-                key={room.id}
-                className="w-96 flex-shrink-0 snap-start p-5 bg-white shadow-lg rounded-lg"
-              >
-                <Image
-                  src={room.image}
-                  alt={`Room ${room.id}`}
-                  height={300}
-                  width={400}
-                  className="rounded-lg"
-                />
-                <div className="mt-4">
-                  <h2 className="text-xl font-medium">Price: ${room.price}</h2>
-                  <p>Adults: {room.adults}</p>
-                  <p>Children: {room.children}</p>
-                  <p>Room Space: {room.roomSpace} m²</p>
-                  <button className="mt-4 w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition-all">
-                    Book Now
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        <HomeRooms />
       </div>
 
       {/* ====== Our Rooms Section Ends ====== */}
